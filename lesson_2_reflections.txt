@@ -6,15 +6,24 @@ How is the staging area different from the working directory and the repository?
 
 	The staging area acts like a working rough draft, allowing you to mold and shape your eventual commit before actually submitting it. If it didn't exist, you'd have to make fewer commits or commit every little change, and the log wouldn't have logical break points for each commit.
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+
+	By using "git diff" it's possible view the changes between the working directory and staging area. When you reach a logical save point, it's just a matter of committing the changes the repo.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	
+	Branches would be helpful when creating experimental features, allowing you to develop and test them without fundamentally altering the main or master version of the code. Branches are good for collaboration and fixing bugs as well.
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+	Without visualizing the branch structure, the relationship amongst branches and the master version would be very abstract and difficult to understand, especially for things like checked out commits that aren't associated to any branches.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The two branches become one. The commits are merged and arranged by timestamp. And the name of the first branch is deleted. It's represented in the diagram to show that branching occurred even after merging has taken place.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	Pros - Allows for logical merging of logic and being able to decipher the changes other people have made to incorporate them into your own.
+	Cons - More time intensive, and sometimes manual merges will seem obvious. But better safe than sorry.
