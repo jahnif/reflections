@@ -23,9 +23,9 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Likely using a tool like Google Docs or a real time code editor. The version management in something like Google Docs would be easier, as you wouldn't have to spend as much time creating branches, merging, committing, etc. You could just make changes. However, it would be much more difficult to have the same functionality as branching, merging, etc. 
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Changing a branch allows you to essentially create a sandbox, build new things, test new features - all without messing up the core functionality of the master branch.
